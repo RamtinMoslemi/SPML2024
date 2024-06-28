@@ -1,0 +1,74 @@
+\documentclass[8pt]{beamer} % default aspect ratio is 4:3
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\setsansfont{Times New Roman}
+\usepackage{multirow}
+% \usepackage{mathptmx}
+% \usepackage{helvet}
+% \usepackage{unicode-math}
+% \usepackage{amssymb}
+% \usepackage{avant}
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage{subcaption}
+
+\author{Aryan Ahadinia / Ramtin Moslemi}
+\title{Data Augmentation Can Improve Robustness}
+% \subtitle{Sharif University of Technology}
+\institute{Security and Privacy in Machine Learning}
+\date{May 14, 2024}
+\usepackage{spml}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{RGB}{153,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+% \lstset{
+%     basicstyle=\ttfamily\small,
+%     keywordstyle=\bfseries\color{deepblue},
+%     emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+%     stringstyle=\color{deepgreen},
+%     numbers=left,
+%     numberstyle=\small\color{halfgray},
+%     rulesepcolor=\color{red!20!green!20!blue!20},
+%     frame=shadowbox,
+% }
+
+
+\begin{document}
+
+\begin{frame}
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[keepaspectratio, scale=0.025]{pic/sut-logo.png}
+        \end{center}
+    \end{figure}
+    \titlepage
+    \vspace*{-0.6cm}
+\end{frame}
+
+\begin{frame}{Today's Agenda}
+    \tableofcontents[sectionstyle=show,
+    subsectionstyle=show/shaded/hide,
+    subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\input{sections/1 Introduction}
+
+\input{sections/2 Preliminaries}
+
+\input{sections/3 Paper}
+
+\input{sections/4 Conclusion}
+
+% \input{sections/methods}
+
+% \input{sections/references}
+
+\end{document}
