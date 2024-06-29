@@ -1,0 +1,79 @@
+\documentclass[8pt]{beamer} % default aspect ratio is 4:3
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\setsansfont{Times New Roman}
+\usefonttheme[onlymath]{serif}
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage{subcaption}
+\usepackage{algorithm,algorithmic}
+
+\author{Aryan Ahadinia / Ramtin Moslemi}
+\title{Multilingual Jailbreak Challenges in LLMs}
+\subtitle{A Paper Presentation \textit{for} Security and Privacy in Machine Learning}
+\institute{Department of Computer Engineering, Sharif University of Technology}
+\date{June 29, 2024}
+\usepackage{spml}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{RGB}{153,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+% \lstset{
+%     basicstyle=\ttfamily\small,
+%     keywordstyle=\bfseries\color{deepblue},
+%     emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+%     stringstyle=\color{deepgreen},
+%     numbers=left,
+%     numberstyle=\small\color{halfgray},
+%     rulesepcolor=\color{red!20!green!20!blue!20},
+%     frame=shadowbox,
+% }
+
+
+\begin{document}
+
+\begin{frame}
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[keepaspectratio, scale=0.025]{pic/sut-logo.png}
+        \end{center}
+    \end{figure}
+    \titlepage
+    \vspace*{-0.6cm}
+\end{frame}
+
+\begin{frame}{Published as a conference paper at ICLR 2024}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{pic/Title.png}
+        % \caption{Caption}
+        \label{fig:title}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Today's Agenda}
+    \tableofcontents[sectionstyle=show,
+    subsectionstyle=show/shaded/hide,
+    subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\input{sections/1 Introduction}
+
+\input{sections/2 Preliminaries}
+
+\input{sections/3 Evaluation}
+
+\input{sections/4 Self-Defence}
+
+\input{sections/5 Related Works}
+
+\input{sections/6 Conclusion}
+
+\end{document}

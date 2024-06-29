@@ -1,0 +1,26 @@
+\section{Related Works}
+\begin{frame}{Related Work}
+    \begin{itemize}
+        \item \textbf{Safety Training}
+        \begin{itemize}
+            \item Aligning LLM behaviours with human ethics and preferences.
+            \item Detecting undesirable behaviours using \textbf{Red Teaming}.
+            \item \textbf{Post-Generation Filtering}: Detect and filter-out harmful content after generation.
+            \item \textbf{Pre-Generation Adaption}: Adapting LLM behaviours to produce safer outputs and avoid generating unsafe content (RLHF).
+            \item Significantly reduce the generation of unsafe contents.
+        \end{itemize}
+        
+        \item \textbf{Jailbreak}
+        \begin{itemize}
+            \item LLMs are still vulnerable adversarial inputs.
+            \item Multi- step jailbreak prompt to extract personally identifiable information (Li et al. 2023). Automating jailbreak attacks across LLMs (Deng et al. 202, Zou et al. 2023).
+            \item Two failure modes of safety alignment:
+            \begin{enumerate}
+                \item \textbf{Competing Objectives}: Occur when a model’s abilities conflict with its safety objectives
+
+                \item \textbf{Mismatched Generalization}: Safety training cannot effectively apply to a domain where the model’s capabilities are present.
+                
+            \end{enumerate}
+        \end{itemize}
+    \end{itemize}
+\end{frame}

@@ -1,0 +1,176 @@
+\mode<presentation>
+
+
+\beamertemplatenavigationsymbolsempty % to remove navigation field
+\setbeamertemplate{navigation symbols}{} % also hides navigation buttons at bottom
+
+\newcommand{\frameofframes}{/}
+\newcommand{\setframeofframes}[1]{\renewcommand{\frameofframes}{#1}}
+
+
+% --------------------------------------------------- %
+%                   Basic colors	                  %
+% --------------------------------------------------- %
+
+
+\xdefinecolor{SPML}{RGB}{105,53,155}  
+\definecolor{ashgrey}{RGB}{97, 97, 97}
+
+
+% --------------------------------------------------- %
+%                     Set colors	                  %
+% --------------------------------------------------- %
+
+% Main color
+\colorlet{mainColor1}{SPML} % dark
+\colorlet{mainColor2}{SPML} % light
+
+%\colorlet{mainColor1}{cadmiumgreen} % dark
+%\colorlet{mainColor2}{honeydew} % light
+
+% Main structure colors
+\colorlet{bodyColor}{white}
+\colorlet{titleColor}{mainColor1}
+\colorlet{chipColor}{mainColor1}
+
+% Sections colors
+\colorlet{sectionColor}{black}
+\colorlet{subsectionColor}{ashgrey}
+
+% Footline colors
+\colorlet{authorFootlineColor}{black}
+\colorlet{instituteFootlineColor}{black}
+\colorlet{titleFootlineColor}{ashgrey}
+\colorlet{pageFootlineColor}{black}
+\colorlet{dateFootlineColor}{black}
+
+% Block colors
+\colorlet{normalTitleBlockColor}{mainColor1}
+\colorlet{normalBlockColor}{mainColor2}
+\colorlet{exampleTitleBlockColor}{SPML}
+\colorlet{exampleBlockColor}{SPML}
+\colorlet{alertTitleBlockColor}{black}
+\colorlet{alertBlockColor}{black}
+
+% Code colors
+\definecolor{CodeGreen}{rgb}{0,0.6,0}
+\definecolor{CodePurple}{rgb}{0.58,0,0.82}
+\definecolor{CodeOrange}{rgb}{1,.45,0}
+\definecolor{CodeGrey}{rgb}{0.92,0.92,0.92}
+
+% Text colors
+	% Main structure:
+\colorlet{normalTextColor}{black}
+\colorlet{titleTextColor}{white}
+\colorlet{chipTextColor}{white}
+	% Sections:
+\colorlet{sectionTextColor}{white}
+\colorlet{subsectionTextColor}{white}
+	% Special:
+\colorlet{exampleTextColor}{SPML}
+\colorlet{emphaseTextColor}{SPML}
+\colorlet{alertTextColor}{SPML}
+	% Footline:
+\colorlet{authorFootlineTextColor}{white}
+\colorlet{instituteFootlineTextColor}{white}
+\colorlet{titleFootlineTextColor}{white}
+\colorlet{pageFootlineTextColor}{white}
+\colorlet{dateFootlineTextColor}{white}
+	% Blocks:
+\colorlet{blockTitleTextColor}{white}
+\colorlet{blockBodyTextColor}{black}
+    % Tables:
+\colorlet{tableTitleTextColor}{white}
+\colorlet{tableBodyTextColor}{black}
+
+% --------------------------------------------------- %
+%                      Structure                      %
+% --------------------------------------------------- %%
+% http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+\usecolortheme[named=mainColor1]{structure}
+\useinnertheme{rectangles}
+\useoutertheme[subsection=false]{miniframes}
+\setbeamertemplate{navigation symbols}{}
+
+% Text
+\setbeamercolor{titlelike}{fg=titleTextColor,bg=titleColor}
+\setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
+\setbeamercolor*{example text}{fg=exampleTextColor}
+\setbeamercolor*{alerted text}{fg=alertTextColor}
+
+\newcommand{\negrito}[1]{\textcolor{airforceblue}{\textbf{#1}}}
+\renewcommand{\emph}[1]{\textcolor{red}{\textbf{#1}}}
+
+% Items
+\setbeamercolor{itemize item}{fg=titleColor!70}
+\setbeamercolor{enumerate item}{fg=titleColor!70}
+\setbeamercolor{description item}{fg=titleColor!70}
+
+% Sections
+\setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
+\setbeamercolor{subsection in head/foot}{bg=subsectionColor, fg=subsectionTextColor}
+
+\useinnertheme{default}
+\setbeamercolor{item projected}{bg=chipColor,fg=chipTextColor}
+\beamer@compresstrue
+\defbeamertemplate*{headline}{smoothbars theme}{%
+  \begin{beamercolorbox}[ht=2.125ex,dp=3.150ex]{section in head/foot}
+  \insertnavigation{\paperwidth}
+  \end{beamercolorbox}%
+
+  \begin{beamercolorbox}[ht=0.125ex,dp=1.125ex,% defualt height was 2.125
+  leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+  \usebeamerfont{subsection in head/foot}\insertsubsectionhead
+  \end{beamercolorbox}%
+}
+
+% Footline
+\setbeamercolor{author in head/foot}{bg=authorFootlineColor, fg=authorFootlineTextColor}
+\setbeamercolor{title in head/foot}{bg=titleFootlineColor, fg=titleFootlineTextColor}
+\setbeamercolor{institute in head/foot}{bg=instituteFootlineColor, fg=instituteFootlineTextColor}
+\setbeamercolor{date in head/foot}{bg=dateFootlineColor, fg=dateFootlineTextColor}
+
+\defbeamertemplate*{footline}{infolines theme}{
+\leavevmode%
+\hbox{% default height was 2.25
+    \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}  A. Ahadinia / R. Moslemi
+    % \insertshortauthor~~
+    \end{beamercolorbox}%
+
+    \begin{beamercolorbox}[wd=.10\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%
+    \usebeamerfont{institute in head/foot}
+    SPML
+    % \insertshortinstitute % uncomment to revert
+    \end{beamercolorbox}%
+
+    \begin{beamercolorbox}[wd=.40\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+
+    \begin{beamercolorbox}[wd=.30\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}
+}%
+\vskip0pt%
+}
+
+
+% --------------------------------------------------- %
+%                  Sections Frames                    %
+% --------------------------------------------------- %
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\mode
+<all>

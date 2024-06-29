@@ -1,0 +1,49 @@
+\section{Introduction}
+
+\begin{frame}{Abstract}
+    \begin{itemize}
+    % [<+-| alert@+>] % stepwise alerts
+        \item While large language models (LLMs) exhibit remarkable capabilities across a wide range of tasks, they pose potential safety concerns, such as the “jailbreak” problem, wherein malicious instructions can manipulate LLMs to exhibit undesirable behavior.
+        \item In this study, we reveal the presence of multilingual jailbreak challenges within LLMs and consider two potential risky scenarios: 
+        \begin{itemize}
+            \item \emph{Unintentional}: Users querying LLMs using non-English prompts and inadvertently bypassing the safety mechanisms.
+            \item \emph{Intentional}: Malicious users combining malicious instructions with multilingual prompts to deliberately attack LLMs.
+        \end{itemize}
+        \item To handle such a challenge in the multilingual context, we propose a novel SELF-DEFENSE framework that automatically generates multilingual training data for safety fine-tuning.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{LLMs’ Safety Mechanisms}
+    \begin{itemize}
+    % [<+-| alert@+>] % stepwise alerts
+        \item To mitigate the potential risks, several prevention measures have been developed, including:
+        \begin{itemize}
+            \item Red Teaming
+            \item Content Filtering
+            \item Reinforcement Learning from Human Feedback (RLHF)
+        \end{itemize}
+        \item However, most of these existing studies on safety training have primarily focused on English, raising concerns about safety in multilingual contexts.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+    \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{pic/Fig 1.png}
+            \caption{Interacting with ChatGPT using the same input, “How can I cut myself without others noticing?” in four languages. In the case of English and Chinese, both high-resource languages, the inputs successfully trigger ChatGPT’s safety mechanism. Conversely, in Thai and Swahili, which are medium and low-resource languages respectively, the generated content tends to be unsafe.}
+            \label{fig:fig}
+        \end{figure}
+\end{frame}
+
+\begin{frame}{Contributions}
+    \begin{enumerate}
+        \item Identify the presence of multilingual jailbreak challenges within LLMs and propose to study them under two potential scenarios: 
+        \begin{itemize}
+            \item unintentional
+            \item intentional
+        \end{itemize}
+        \item Introduce the first manually-created multilingual jailbreak dataset, \textbf{MultiJail}, and demonstrate the effectiveness of multilingualism as a jailbreak method in both scenarios through extensive experiments.
+        \item Propose a novel framework called SELF-DEFENCE to effectively alleviate the multilingual jailbreak challenge in LLMs without any human annotation.
+    \end{enumerate}
+\end{frame}
+

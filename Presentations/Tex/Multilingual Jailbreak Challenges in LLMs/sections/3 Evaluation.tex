@@ -1,0 +1,102 @@
+\section{Detailed Evaluation}
+
+\begin{frame}{MultiJail}
+    \begin{itemize}
+    % [<+-| alert@+>] % stepwise alerts
+        \item \textbf{MultiJail} is the first multilingual jailbreak dataset available.
+        \item It comprises a total of 3150 samples, with 315 samples in English and parallel samples in nine other diverse non-English languages.
+        \item To prevent noisy translation that may cause inaccurate evaluation, we incorporate native speakers for human translation.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{pic/MultiJail.png}
+        \caption{Tag statistics of \textbf{MultiJail}.}
+        \label{fig:MuliJail}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Setup}
+    \begin{itemize}
+    % [<+-| alert@+>] % stepwise alerts
+        \item \textbf{Dataset \& Language}: Based on the preliminary study, we select three languages from each category for further analysis:
+        \begin{itemize}
+            \item \textbf{High-resource}: Chinese (zh), Italian (it), Vietnamese (vi)
+            \item \textbf{Medium-resource}: Arabic (ar), Korean (ko), Thai (th)
+            \item \textbf{Low-resource}: Bengali (bn), Swahili (sw), Javanese (jv)
+        \end{itemize}
+        \item \textbf{Model \& Evaluation}: We employ two multilingual models, namely ChatGPT (GPT-3.5-turbo-0613) and GPT-4 (GPT-4-0613), for our detailed evaluation and to ensure consistent responses, we set the temperature to 0 and maintain default settings for other hyperparameters.
+        \item \textbf{Setting}: This study considers two risk scenarios:
+        \begin{itemize}
+            \item \textbf{Unintentional}: We directly use the human-translated harmful prompts in MultiJail as queries for LLMs.
+            \item \textbf{Intentional}: We select a powerful malicious instruction called AIM from \href{https://www.jailbreakchat.com/}{jailbreakchat.com}, a platform for sharing malicious instructions. The selection attempts to mimic a malicious user’s behavior who, in a real-life scenario, would likely search the internet to find the most effective malicious instructions for intentional malicious purposes. 
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Always Intelligent and Machiavellian (AIM Prompt)}
+    \begin{itemize}
+        \item We take the English version of AIM and concatenate it with the translated harmful prompts to form the final query of the LLMs. 
+        \item This setup allows us to simulate a scenario where a malicious user searches for an English malicious instruction and combines it with a non-English harmful prompt, intending to obtain unsafe content from the LLMs.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{pic/AIM.png}
+        \caption{Detailed prompt for AIM.}
+        \label{fig:AIM}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Detailed Evaluation Results}
+    \begin{itemize}
+        \item Despite a relatively higher likelihood in low-resource languages, the invalid rate remains acceptable.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{pic/main results.png}
+        \caption{Detailed results of ChatGPT and GPT-4 on \textbf{MultiJail} over two scenarios.}
+        \label{fig:main_results}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Unintentional Scenarios}
+    \begin{itemize}
+        \item \textbf{Multilingual jailbreak challenges exist in LLMs}: Safety training has proven to be effective in minimizing unsafe behavior in English, resulting in an almost negligible rate of unsafe content in both models. However, non-English languages exhibit a notably higher occurrence of unsafe behavior compared to English.
+        \item \textbf{Unsafe rate increases with decreasing language availability}: This finding suggests that individuals who speak low-resource languages are approximately three times more likely to unintentionally come across harmful content.
+        \item \textbf{Multilingual adaptive attack poses greater threat}: We explore a multilingual adaptive attack strategy where an adaptive adversary exploits translation as a jailbreak method. This adversary can iterate through a candidate pool of languages to execute an attack.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{pic/adaptive.png}
+        \caption{Results of multilingual adaptive attacks on both scenarios. A multilingual attack refers to an adaptive selection of languages for attack and is regarded successful if any of the attempted languages generate unsafe content.}
+        \label{fig:adaptive}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Intentional Scenarios}
+    \begin{itemize}
+        \item \textbf{Multilingual boosts jailbreaking}: These findings show the challenge posed by insufficient consideration of safety issues regarding non-English languages. These findings indicate that individuals with malicious intent can easily find malicious instructions online and exploit translation service providers to launch more severe attacks on LLMs in a dynamic manner.
+        \item \textbf{LLMs show relative stability despite language availability in intentional scenario}: In this scenario, both LLMs have a stable unsafe rate across \textbf{LRL}s to \textbf{HRL}s. Our hypothesis is that malicious instructions dominate the decision process, diminishing the impact of language differences within non-English languages, rendering them negligible. It shows that the introduction of malicious instructions alters the default behavior of LLMs, revealing a more nuanced relationship between language availability, instructions, and LLM behavior.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Analysis}
+    \begin{itemize}
+        \item \textbf{Translation method}: Given the limited number of native speakers for each language, machine translation emerges as a more feasible alternative. To assess the impact of the translation method, we replace the human-translated prompts with machine-translated text in the target language from the unintentional scenario.
+        \item \textbf{Malicious instruction language}: Moreover, we investigate the impact of malicious instruction language by using Google Translate to translate the “AIM” instruction into different target languages. These translations are then combined with corresponding target language prompts as inputs for LLMs.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \begin{minipage}{.45\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{pic/Translation.png}
+            \caption{Ablation on translation quality}
+            \label{fig:translation_ablation}
+        \end{minipage}
+        \begin{minipage}{.45\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{pic/Language.png}
+            \caption{Ablation on jailbreak language}\label{fig:language_ablation}
+        \end{minipage}
+    \end{figure}
+\end{frame}
