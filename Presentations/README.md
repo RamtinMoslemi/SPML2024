@@ -1,8 +1,7 @@
 # Presentations
-This course had two series of presentations.
-
+This course had two series of presentations. 
 ## Evasion Presentations
-Held on May 14, 2024.
+Held on May 14, 2024, in person.
 
 Suggested papers:
 
@@ -27,7 +26,7 @@ Suggested papers:
 
 
 ## Differential Privacy / Large Language Models
-Held on June 29, 2024.
+Held on June 29, 2024, virtually.
 
 Suggested papers:
 
