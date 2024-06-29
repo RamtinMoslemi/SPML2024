@@ -4,8 +4,8 @@
     \begin{itemize}
     % [<+-| alert@+>] % stepwise alerts
         \item One of the surprising characteristics of deep learning is the relative lack of overfitting. 
-        \item Deep learning models can often be trained to zero training error without causing any detrimental effects on the generalization performance.
-        \item Adversarially robust training has the property that, after a certain point, further training will continue to substantially decrease the robust training loss of the classifier, while increasing the robust test loss (Rice et al., 2020).
+        \item Models can be trained to zero training error without detrimental effects on generalization.
+        \item In adversarial training, excessive training will continue to decrease the robust training loss, while increasing the robust test loss (Rice et al., 2020).
         \begin{figure}
             \begin{minipage}[c]{0.55\linewidth}
                 \includegraphics[height=.5\textheight]{pic/cifar10_curve.png}
@@ -34,8 +34,7 @@
 
 
 \begin{frame}{Averaging Weights Leads to Wider Optima and Better Generalization}
-    \begin{itemize}
-    % [<+-| alert@+>] % stepwise alerts
+    \begin{itemize}[<+-| alert@+>] % stepwise alerts
         \item Deep neural networks are typically trained by optimizing a loss function with an SGD variant, in conjunction with a decaying learning rate, until convergence.
         \item Simple averaging of multiple points along the trajectory of SGD, with a cyclical or constant learning rate, leads to better generalization than conventional training.
         \item Stochastic Weight Averaging (SWA) procedure finds much flatter solutions than SGD.
@@ -46,10 +45,9 @@
 \end{frame}
 
 \begin{frame}{Model Weight Averaging}
-    \begin{itemize}
-    % [<+-| alert@+>] % stepwise alerts
+    \begin{itemize}[<+-| alert@+>] % stepwise alerts
         \item WA leads to a \emph{flatter adversarial loss landscape} and a smaller robust generalization gap.
-        \item In addition to improved robustness, WA reduces sensitivity to early stopping. 
+        \item WA reduces sensitivity to early stopping. 
         \item However WA is still prone to robust overfitting since the exponential moving average “forgets” older model parameters as training goes on.
         \item We observe that, after the change of learning rate, the averaged weights are increasingly affected by overfitting, thus resulting in worse robust accuracy for the averaged model.
         \begin{figure}

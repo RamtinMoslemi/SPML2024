@@ -3,12 +3,7 @@
 \usepackage{fontspec}
 \usepackage[T1]{fontenc}
 \setsansfont{Times New Roman}
-\usepackage{multirow}
-% \usepackage{mathptmx}
-% \usepackage{helvet}
-% \usepackage{unicode-math}
-% \usepackage{amssymb}
-% \usepackage{avant}
+\usefonttheme[onlymath]{serif}
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
@@ -16,8 +11,8 @@
 
 \author{Aryan Ahadinia / Ramtin Moslemi}
 \title{Data Augmentation Can Improve Robustness}
-% \subtitle{Sharif University of Technology}
-\institute{Security and Privacy in Machine Learning}
+\subtitle{A Paper Presentation \textit{for} Security and Privacy in Machine Learning}
+\institute{Department of Computer Engineering, Sharif University of Technology}
 \date{May 14, 2024}
 \usepackage{spml}
 
@@ -28,17 +23,6 @@
 \definecolor{deepred}{RGB}{153,0,0}
 \definecolor{deepgreen}{rgb}{0,0.5,0}
 \definecolor{halfgray}{gray}{0.55}
-
-% \lstset{
-%     basicstyle=\ttfamily\small,
-%     keywordstyle=\bfseries\color{deepblue},
-%     emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
-%     stringstyle=\color{deepgreen},
-%     numbers=left,
-%     numberstyle=\small\color{halfgray},
-%     rulesepcolor=\color{red!20!green!20!blue!20},
-%     frame=shadowbox,
-% }
 
 
 \begin{document}
@@ -51,6 +35,14 @@
     \end{figure}
     \titlepage
     \vspace*{-0.6cm}
+\end{frame}
+
+\begin{frame}{A Paper of 35\textsuperscript{th} Conference on Neural Information Processing Systems}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{pic/Title.png}
+        \label{fig:title}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Today's Agenda}
@@ -66,9 +58,5 @@
 \input{sections/3 Paper}
 
 \input{sections/4 Conclusion}
-
-% \input{sections/methods}
-
-% \input{sections/references}
 
 \end{document}
