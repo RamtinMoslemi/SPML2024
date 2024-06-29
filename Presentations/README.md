@@ -1,7 +1,8 @@
 # Presentations
-This course had two series of presentations. 
+This course had two series of presentations which corresponded to the different sections of the course. 
+
 ## Evasion Presentations
-Held on May 14, 2024, in person.
+Held on May 14, 2024, in person. These papers focused on the first part of the course and covered Adversarial Attacks.
 
 Suggested papers:
 
@@ -26,7 +27,7 @@ Suggested papers:
 
 
 ## Differential Privacy / Large Language Models
-Held on June 29, 2024, virtually.
+Held on June 29, 2024, virtually. These papers focused on the second part of the course and covered Model Extraction, Differential Privacy, and LLM Security.
 
 Suggested papers:
 
