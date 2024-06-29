@@ -2,6 +2,7 @@
 This course had two series of presentations.
 
 ## Evasion Presentations
+Held on May 14, 2024.
 
 Suggested papers:
 
@@ -13,7 +14,7 @@ Suggested papers:
 6. [Fundamental Tradeoffs between Invariance and Sensitivity to Adversarial Perturbations](https://arxiv.org/abs/2002.04599)
 7. [Adversarial Training for Free!](https://arxiv.org/pdf/1904.12843.pdf)
 8. [Reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks](https://proceedings.mlr.press/v119/croce20b/croce20b.pdf)
-9. **[Data Augmentation Can Improve Robustness](https://proceedings.neurips.cc/paper/2021/file/fb4c48608ce8825b558ccf07169a3421-Paper.pdf)** (our presentation)
+9. **[Data Augmentation Can Improve Robustness](https://proceedings.neurips.cc/paper/2021/file/fb4c48608ce8825b558ccf07169a3421-Paper.pdf)** (_our presentation_)
 10. [Square Attack: a query-efficient black-box adversarial attack via random search](https://arxiv.org/abs/1912.00049)
 11. [Detecting Adversarial Examples Is (Nearly) As Hard As Classifying Them](https://proceedings.mlr.press/v162/tramer22a.html)
 12. [Adversarial Examples for Malware Detection](https://link.springer.com/chapter/10.1007/978-3-319-66399-9_4)
@@ -26,6 +27,7 @@ Suggested papers:
 
 
 ## Differential Privacy / Large Language Models
+Held on June 29, 2024.
 
 Suggested papers:
 
@@ -40,8 +42,8 @@ Suggested papers:
 9. [Adversary Instantiation: Lower Bounds for Differentially Private Machine Learning](https://ieeexplore.ieee.org/document/9519424)
 10. [Stealing Part of a Production Language Model](https://arxiv.org/abs/2403.06634)
 11. [Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!](https://arxiv.org/abs/2310.03693)
-12. [AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Lan- guage Models](https://openreview.net/forum?id=7Jwpw4qKkb)
-13. **[Multilingual Jailbreak Challenges in Large Language Models](https://openreview.net/forum?id=vESNKdEMGp)** (our presentation)
+12. [AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models](https://openreview.net/forum?id=7Jwpw4qKkb)
+13. **[Multilingual Jailbreak Challenges in Large Language Models](https://openreview.net/forum?id=vESNKdEMGp)** (_our presentation_)
 14. [Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation](https://openreview.net/forum?id=r42tSSCHPh)
 15. [On the Reliability of Watermarks for Large Language Models](https://openreview.net/forum?id=DEJIDCmWOz)
 16. [On Evaluating Adversarial Robustness of Large Vision-Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/file/a97b58c4f7551053b0512f92244b0810-Paper-Conference.pdf)
