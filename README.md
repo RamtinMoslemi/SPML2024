@@ -18,7 +18,7 @@ The following papers were covered in, and were a part of the course.
 | **Privacy** | [Membership Inference Attacks against Machine Learning Models](https://arxiv.org/abs/1610.05820)<br>[Passive and Active White-box Inference Attacks against Centralized and Federated Learning](https://arxiv.org/abs/1812.00910)<br>[The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)<br>[Deep Learning with Differential Privacy](https://arxiv.org/abs/1607.00133)<br>[Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data](https://arxiv.org/abs/1610.05755) |
 | **LLM Security** | [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043) |
 
-## Additional Papers
+### Additional Papers
 The papers that were were covered in the:
 -  first series of presentations, which focus on **Adversarial Examples**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#evasion-presentations).
 -  second series of presentations, which focus on **Model Extraction**, **Privacy** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#differential-privacy--large-language-models). 
