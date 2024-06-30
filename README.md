@@ -22,4 +22,4 @@ The following papers were covered in, and were a part of the course.
 The papers that were were covered in the:
 -  first series of presentations, which focus on **Adversarial Examples**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#evasion-presentations).
 -  second series of presentations, which focus on **Model Extraction**, **Privacy** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#differential-privacy--large-language-models). 
--  homework assignments, which focus on **Black-Box AEs** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Assignments#papers).
+-  homework assignments, which focus on **Black-Box AEs**, **DP** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Assignments#papers).
