@@ -51,7 +51,7 @@ if __name__ == '__main__':
     model = nn.MLP(layers, nn.CrossEntropy(), nn.GradientDescent(0.001))
 
     # Train the model
-    losses = model.train(x_train, y_train, 10, 64)
+    losses = model.train(x_train, y_train, 30, 64)
 
     # Plot the loss
     plt.plot(losses)
