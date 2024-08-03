@@ -4,9 +4,7 @@ from numpy_nn.optim import Optimizer
 
 
 class Layer:
-    def __init__(self, inp_dim: int = None, out_dim: int = None) -> None:
-        self.inp_dim = inp_dim
-        self.out_dim = out_dim
+    def __init__(self, *args) -> None:
         self.inp = None
         self.out = None
 
@@ -22,8 +20,7 @@ class Layer:
 
 class Linear(Layer):
     def __init__(self, in_dim: int, out_dim: int) -> None:
-        super().__init__(in_dim, out_dim)
-
+        super().__init__()
         # Initialize the layer's weights and biases
         self.w = 0.10 * np.random.randn(in_dim, out_dim)
         self.b = np.zeros((1, out_dim))
