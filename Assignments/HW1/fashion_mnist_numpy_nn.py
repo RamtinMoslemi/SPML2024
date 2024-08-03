@@ -9,7 +9,7 @@ np.random.seed(123)
 class_names = {0: 'T-shirt/top', 1: 'Trouser', 2: 'Pullover', 3: 'Dress', 4: 'Coat',
                5:  'Sandal', 6: 'Shirt', 7: 'Sneaker', 8: 'Bag', 9: 'Ankle boot'}
 # Include all the classes you want to see in training
-kept_classes = [0, 1, 7]
+kept_classes = [0, 1, 7]  # T-shirt/top, Trouser, Sneaker
 
 
 def get_data(filter_classes):
@@ -64,6 +64,6 @@ if __name__ == '__main__':
     plt.show()
 
     # Test the model
-    y_prediction = np.argmax(model.forward(x_test), axis=1)
+    y_prediction = np.argmax(model(x_test), axis=1)
     acc = 100 * np.mean(y_prediction == y_test)
     print(f'Test accuracy with {len(y_train)} training examples on {len(y_test)} test samples is {acc:.2f}%')

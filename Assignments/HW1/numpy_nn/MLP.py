@@ -11,6 +11,9 @@ class MLP:
         self.loss_fn = loss_fn
         self.optimizer = optimizer
 
+    def __call__(self, inp: np.ndarray) -> np.ndarray:
+        return self.forward(inp)
+
     def forward(self, inp: np.ndarray) -> np.ndarray:
         # Pass `inp` to all the layers sequentially and return the result.
         for layer in self.layers:
@@ -18,7 +21,7 @@ class MLP:
         return inp
 
     def loss(self, prediction: np.ndarray, target: np.ndarray) -> float:
-        loss = self.loss_fn.forward(prediction, target)
+        loss = self.loss_fn(prediction, target)
         return loss
 
     def backward(self):

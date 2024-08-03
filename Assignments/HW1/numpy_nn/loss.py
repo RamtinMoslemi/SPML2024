@@ -7,6 +7,9 @@ class Loss:
         self.target = None
         self.loss = None
 
+    def __call__(self, prediction: np.ndarray, target: np.ndarray) -> float:
+        return self.forward(prediction, target)
+
     def forward(self, prediction: np.ndarray, target: np.ndarray) -> float:
         raise NotImplementedError
 
