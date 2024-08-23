@@ -18,7 +18,7 @@ Following papers are about **Catastrophic Overfitting** (CO):
 5.  [ZeroGrad: Mitigating and Explaining Catastrophic Overfitting in FGSM Adversarial Training](https://arxiv.org/abs/2103.15476)
 6.  [Reliably Fast Adversarial Training via Latent Adversarial Perturbation](https://arxiv.org/abs/2104.01575)
 7.  [Understanding Catastrophic Overfitting in Adversarial Training](https://arxiv.org/abs/2105.02942)
-8.  [Boosting Fast Adversarial Training with Learnable Adversarial Initialization](https://arxiv.org/pdf/2110.05007)
+8.  [Boosting Fast Adversarial Training with Learnable Adversarial Initialization](https://arxiv.org/abs/2110.05007)
 9.  [Subspace Adversarial Training](https://arxiv.org/abs/2111.12229)
 10. [Revisiting and Advancing Fast Adversarial Training Through The Lens of Bi-Level Optimization](https://arxiv.org/abs/2112.12376)
 11. [Make Some Noise: Reliable and Efficient Single-Step Adversarial Training](https://arxiv.org/abs/2202.01181)
