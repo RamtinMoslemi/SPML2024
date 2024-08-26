@@ -5,6 +5,9 @@ Adversarial Robust Learning and its Generalization Issues
 Following papers are about **Neural Tangent Kernels** (NTK):
 1.  [Neural Tangent Kernel: Convergence and Generalization in Neural Networks](https://arxiv.org/abs/1806.07572)
 2.  [Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent](https://arxiv.org/abs/1902.06720)
+3.  [Deep Learning Versus Kernel Learning: An Empirical Study of Loss Landscape Geometry and the Time Evolution of the Neural Tangent Kernel](https://arxiv.org/abs/2010.15110)
+4.  [Evolution of Neural Tangent Kernels under Benign and Adversarial Training](https://arxiv.org/abs/2210.12030)
+5.  [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
 
 Following papers are about **Robust Overfitting**:
 1.  [Overfitting in Adversarially Robust Deep Learning](https://arxiv.org/abs/2002.11569)
