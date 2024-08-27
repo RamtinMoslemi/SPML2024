@@ -8,6 +8,7 @@ Following papers are about **Neural Tangent Kernels** (NTK):
 3.  [Deep Learning Versus Kernel Learning: An Empirical Study of Loss Landscape Geometry and the Time Evolution of the Neural Tangent Kernel](https://arxiv.org/abs/2010.15110)
 4.  [Evolution of Neural Tangent Kernels under Benign and Adversarial Training](https://arxiv.org/abs/2210.12030)
 5.  [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
+6.  [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/pdf/2312.02236)
 
 Following papers are about **Robust Overfitting**:
 1.  [Overfitting in Adversarially Robust Deep Learning](https://arxiv.org/abs/2002.11569)
