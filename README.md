@@ -23,3 +23,13 @@ The papers that were were covered in the:
 -  first series of presentations, which focus on **Adversarial Examples**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#evasion-presentations).
 -  second series of presentations, which focus on **Model Extraction**, **Privacy** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Presentations#differential-privacy--large-language-models). 
 -  homework assignments, which focus on **Black-Box AEs**, **DP** and **LLM Security**, can be found [here](https://github.com/RamtinMoslemi/SPML2024/tree/main/Assignments#papers).
+
+# Other Resources
+The following supplementary resouces can help you learn more or fill your knwoledge gaps:
+-  You can find more about **Adversarial Examples** from [this blog](https://openai.com/index/attacking-machine-learning-with-adversarial-examples/) from OpenAI.
+-  To learn more about **Adversarial Machine Learning** you can check out [this article](https://en.wikipedia.org/wiki/Adversarial_machine_learning) from Wikipedia.
+-  The guest lecture given by [Ian Goodfellow](https://www.iangoodfellow.com) for [Stanford CS231n: Deep Learning for Computer Vision](https://cs231n.stanford.edu) titled [Adversarial Examples and Adversarial Training](https://youtu.be/CIfsB_EYsVI?feature=shared) is another great resource.
+-  While there aren't any textbooks that specifically focus on these topics, the [Robust Optimization](https://press.princeton.edu/books/hardcover/9780691143682/robust-optimization?srsltid=AfmBOorod7ku6JCwVHZSlgmJzkxa-2BztqRskybl5Lp_rLBCCSOdLhmj) textbook covers some interesting related topics.
+-  You can check out [CS 860 - Algorithms for Private Data Analysis](http://www.gautamkamath.com/CS860-fa2020.html) instructed by [Gautam Kamath](http://www.gautamkamath.com) for [A Course In Differential Privacy](https://youtube.com/playlist?list=PLmd_zeMNzSvRRNpoEWkVo6QY_6rR3SHjp&feature=shared).
+-  The [Privacy Preserving Machine Learning](http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html) course taught by [Aurélien Bellet](http://researchers.lille.inria.fr/abellet/) is another great resource.
+-  You can find a lot of interesting stuff on [Nicholas Carlini's personal page](https://nicholas.carlini.com).
