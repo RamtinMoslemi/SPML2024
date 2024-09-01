@@ -8,7 +8,7 @@ Following papers are about **Neural Tangent Kernels** (NTK):
 3.  [Deep Learning Versus Kernel Learning: An Empirical Study of Loss Landscape Geometry and the Time Evolution of the Neural Tangent Kernel](https://arxiv.org/abs/2010.15110)
 4.  [Evolution of Neural Tangent Kernels under Benign and Adversarial Training](https://arxiv.org/abs/2210.12030)
 5.  [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
-6.  [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/pdf/2312.02236)
+6.  [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/abs/2312.02236)
 
 Following papers are about miscellaneous topics such as **Robust Overfitting**, **Adaptive Attacks**, and more:
 1.  [Adversarial Machine Learning at Scale](https://arxiv.org/abs/1611.01236)
@@ -18,7 +18,7 @@ Following papers are about miscellaneous topics such as **Robust Overfitting**, 
 5.  [Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning](https://arxiv.org/abs/1712.03141)
 6.  [On Evaluating Adversarial Robustness](https://arxiv.org/abs/1902.06705)
 7.  [Adversarial Training for Free!](https://arxiv.org/abs/1904.12843)
-8.  [On Adaptive Attacks to Adversarial Example Defenses](https://arxiv.org/pdf/2002.08347)
+8.  [On Adaptive Attacks to Adversarial Example Defenses](https://arxiv.org/abs/2002.08347)
 9.  [Overfitting in Adversarially Robust Deep Learning](https://arxiv.org/abs/2002.11569)
 
 Following papers are about **Catastrophic Overfitting** (CO):
