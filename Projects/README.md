@@ -21,6 +21,7 @@ Following papers are about miscellaneous topics such as **Robust Overfitting**, 
 7.  [Adversarial Training for Free!](https://arxiv.org/abs/1904.12843)
 8.  [On Adaptive Attacks to Adversarial Example Defenses](https://arxiv.org/abs/2002.08347)
 9.  [Overfitting in Adversarially Robust Deep Learning](https://arxiv.org/abs/2002.11569)
+10. [Exploring Memorization in Adversarial Training](https://arxiv.org/abs/2106.01606)
 
 Following papers are about **Catastrophic Overfitting** (CO):
 
