@@ -6,10 +6,11 @@ Following papers are about **Neural Tangent Kernels** (NTK):
 1.  [Neural Tangent Kernel: Convergence and Generalization in Neural Networks](https://arxiv.org/abs/1806.07572)
 2.  [Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent](https://arxiv.org/abs/1902.06720)
 3.  [Deep Learning Versus Kernel Learning: An Empirical Study of Loss Landscape Geometry and the Time Evolution of the Neural Tangent Kernel](https://arxiv.org/abs/2010.15110)
-4.  [What Can the Neural Tangent Kernel Tell Us About Adversarial Robustness?](https://arxiv.org/abs/2210.05577)
-5.  [Evolution of Neural Tangent Kernels under Benign and Adversarial Training](https://arxiv.org/abs/2210.12030)
-6.  [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
-7.  [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/abs/2312.02236)
+4.  [Fast Finite Width Neural Tangent Kernel](https://arxiv.org/abs/2206.08720)
+5.  [What Can the Neural Tangent Kernel Tell Us About Adversarial Robustness?](https://arxiv.org/abs/2210.05577)
+6.  [Evolution of Neural Tangent Kernels under Benign and Adversarial Training](https://arxiv.org/abs/2210.12030)
+7.  [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
+8.  [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/abs/2312.02236)
 
 Following papers are about miscellaneous topics such as **Robust Overfitting**, **Adaptive Attacks**, and more:
 1.  [Adversarial Machine Learning at Scale](https://arxiv.org/abs/1611.01236)
