@@ -48,11 +48,23 @@ Transferability of Distributional Robustness in Knowledge Distillation
 
 ## Readings
 Following papers are about **Distributional Robustness**:
+<!-- 
+- [Data-driven Distributionally Robust Optimization Using the Wasserstein Metric: Performance Guarantees and Tractable Reformulations](https://arxiv.org/abs/1505.05116) 
+- [Wasserstein Distributionally Robust Optimization: Theory and Applications in Machine Learning](https://arxiv.org/abs/1908.08729)
+-->
 - [Certifying Some Distributional Robustness with Principled Adversarial Training](https://arxiv.org/abs/1710.10571)
-- [Adversarially Robust Distillation](https://arxiv.org/abs/1905.09747)
+- [Generalised Lipschitz Regularisation Equals Distributional Robustness](https://arxiv.org/abs/2002.04197)
+- [Adversarial Distributional Training for Robust Deep Learning](https://arxiv.org/abs/2002.05999)
 - [On Robustness and Transferability of Convolutional Neural Networks](https://arxiv.org/abs/2007.08558)
+- [Distributional Robustness Loss for Long-tail Learning](https://arxiv.org/abs/2104.03066)
+- [Distributionally Robust Learning](https://arxiv.org/abs/2108.08993)
+- [A Unified Wasserstein Distributional Robustness Framework for Adversarial Training](https://arxiv.org/abs/2202.13437)
+- [Explicit Tradeoffs between Adversarial and Natural Distributional Robustness](https://arxiv.org/abs/2209.07592)
 
 Following papers are about **Knowledge Distillation**:
 - [Variational Information Distillation for Knowledge Transfer](https://arxiv.org/abs/1904.05835)
+- [Adversarially Robust Distillation](https://arxiv.org/abs/1905.09747)
 - [Revisiting Adversarial Robustness Distillation: Robust Soft Labels Make Student Better](https://arxiv.org/abs/2108.07969)
+- [How and When Adversarial Robustness Transfers in Knowledge Distillation?](https://arxiv.org/abs/2110.12072)
+- [On the benefits of knowledge distillation for adversarial robustness](https://arxiv.org/abs/2203.07159)
 
