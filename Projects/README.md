@@ -58,11 +58,11 @@ Following papers are about **Distributional Robustness**:
 - [The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization](https://arxiv.org/pdf/2006.16241)
 - [On Robustness and Transferability of Convolutional Neural Networks](https://arxiv.org/abs/2007.08558)
 - [Distributional Robustness Loss for Long-tail Learning](https://arxiv.org/abs/2104.03066)
-- [A Universal Law of Robustness via Isoperimetry](https://arxiv.org/pdf/2105.12806)
+- [A Universal Law of Robustness via Isoperimetry](https://arxiv.org/abs/2105.12806)
 - [Distributionally Robust Learning](https://arxiv.org/abs/2108.08993)
 - [A Unified Wasserstein Distributional Robustness Framework for Adversarial Training](https://arxiv.org/abs/2202.13437)
 - [Explicit Tradeoffs between Adversarial and Natural Distributional Robustness](https://arxiv.org/abs/2209.07592)
-- [Taking a Moment for Distributional Robustness](https://arxiv.org/pdf/2405.05461)
+- [Taking a Moment for Distributional Robustness](https://arxiv.org/abs/2405.05461)
 
 Following papers are about **Knowledge Distillation**:
 - [Variational Information Distillation for Knowledge Transfer](https://arxiv.org/abs/1904.05835)
