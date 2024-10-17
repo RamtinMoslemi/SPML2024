@@ -13,6 +13,11 @@ Following papers are about **Neural Tangent Kernels** (NTK):
 - [Theoretical Analysis of Robust Overfitting for Wide DNNs: An NTK Approach](https://arxiv.org/abs/2310.06112)
 - [Rethinking Adversarial Training with Neural Tangent Kernel](https://arxiv.org/abs/2312.02236)
 
+Following papers are about **Neural Anisotropy Directions** (NAD):
+- [Neural Anisotropy Directions](https://arxiv.org/abs/2006.09717)
+- [A neural anisotropic view of underspecification in deep learning](https://arxiv.org/abs/2104.14372)
+- [What can linearized neural networks actually say about generalization?](https://arxiv.org/abs/2106.06770)
+
 Following papers are about miscellaneous topics such as **Robust Overfitting**, **Adaptive Attacks**, and more:
 - [Adversarial Machine Learning at Scale](https://arxiv.org/abs/1611.01236)
 - [The Space of Transferable Adversarial Examples](https://arxiv.org/abs/1704.03453)
