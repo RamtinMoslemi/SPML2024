@@ -19,6 +19,7 @@ Following papers are about **Neural Anisotropy Directions** (NAD):
 - [What can linearized neural networks actually say about generalization?](https://arxiv.org/abs/2106.06770)
 
 Following papers are about miscellaneous topics such as **Robust Overfitting**, **Adaptive Attacks**, and more:
+- [Robustness of classifiers: from adversarial to random noise](https://arxiv.org/abs/1608.08967)
 - [Adversarial Machine Learning at Scale](https://arxiv.org/abs/1611.01236)
 - [The Space of Transferable Adversarial Examples](https://arxiv.org/abs/1704.03453)
 - [Ensemble Adversarial Training: Attacks and Defenses](https://arxiv.org/abs/1705.07204)
