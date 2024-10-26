@@ -44,6 +44,7 @@ Following papers are about **Catastrophic Overfitting** (CO):
 - [Revisiting and Advancing Fast Adversarial Training Through The Lens of Bi-Level Optimization](https://arxiv.org/abs/2112.12376)
 - [Make Some Noise: Reliable and Efficient Single-Step Adversarial Training](https://arxiv.org/abs/2202.01181)
 - [Catastrophic Overfitting Can Be Induced with Discriminative Non-Robust Features](https://arxiv.org/abs/2206.08242)
+- [Blacksmith: Fast Adversarial Training of Vision Transformers via a Mixture of Single-step and Multi-step Methods](https://arxiv.org/abs/2310.18975)
 - [Efficient Local Linearity Regularization to Overcome Catastrophic Overfitting](https://arxiv.org/abs/2401.11618)
 
 
