@@ -49,6 +49,8 @@ Following papers are about **Catastrophic Overfitting** (CO):
 - [Catastrophic Overfitting Can Be Induced with Discriminative Non-Robust Features](https://arxiv.org/abs/2206.08242)
 - [Blacksmith: Fast Adversarial Training of Vision Transformers via a Mixture of Single-step and Multi-step Methods](https://arxiv.org/abs/2310.18975)
 - [Efficient Local Linearity Regularization to Overcome Catastrophic Overfitting](https://arxiv.org/abs/2401.11618)
+- [Catastrophic Overfitting: A Potential Blessing in Disguise](https://arxiv.org/abs/2402.18211)
+- [Eliminating Catastrophic Overfitting Via Abnormal Adversarial Examples Regularization](https://arxiv.org/abs/2404.08154)
 
 
 
