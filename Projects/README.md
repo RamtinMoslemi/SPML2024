@@ -2,6 +2,7 @@
 Adversarial Robust Learning and its Generalization Issues 
 
 ## Readings
+
 Following papers are about **Neural Tangent Kernels** (NTK):
 - [Neural Tangent Kernel: Convergence and Generalization in Neural Networks](https://arxiv.org/abs/1806.07572)
 - [Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent](https://arxiv.org/abs/1902.06720)
@@ -57,27 +58,33 @@ Following papers are about **Catastrophic Overfitting** (CO):
 Transferability of Distributional Robustness in Knowledge Distillation
 
 ## Readings
+
 Following papers are about **Distributional Robustness**:
 - [Data-driven Distributionally Robust Optimization Using the Wasserstein Metric: Performance Guarantees and Tractable Reformulations](https://arxiv.org/abs/1505.05116) 
 - [Wasserstein Distributionally Robust Optimization: Theory and Applications in Machine Learning](https://arxiv.org/abs/1908.08729)
 - [Generalised Lipschitz Regularisation Equals Distributional Robustness](https://arxiv.org/abs/2002.04197)
 - [Adversarial Distributional Training for Robust Deep Learning](https://arxiv.org/abs/2002.05999)
 - [The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization](https://arxiv.org/pdf/2006.16241)
+- [Adaptive Risk Minimization: Learning to Adapt to Domain Shift](https://arxiv.org/abs/2007.02931)
 - [On Robustness and Transferability of Convolutional Neural Networks](https://arxiv.org/abs/2007.08558)
 - [Distributional Robustness Loss for Long-tail Learning](https://arxiv.org/abs/2104.03066)
 - [A Universal Law of Robustness via Isoperimetry](https://arxiv.org/abs/2105.12806)
 - [Distributionally Robust Learning](https://arxiv.org/abs/2108.08993)
+- [Improving Out-of-Distribution Robustness via Selective Augmentation](https://arxiv.org/abs/2201.00299)
 - [A Unified Wasserstein Distributional Robustness Framework for Adversarial Training](https://arxiv.org/abs/2202.13437)
 - [Explicit Tradeoffs between Adversarial and Natural Distributional Robustness](https://arxiv.org/abs/2209.07592)
 - [Taking a Moment for Distributional Robustness](https://arxiv.org/abs/2405.05461)
 
 Following papers are about **Knowledge Distillation**:
+- [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
 - [Variational Information Distillation for Knowledge Transfer](https://arxiv.org/abs/1904.05835)
 - [Adversarially Robust Distillation](https://arxiv.org/abs/1905.09747)
 - [Self-training with Noisy Student improves ImageNet classification](https://arxiv.org/abs/1911.04252)
+- [Understanding Robustness in Teacher-Student Setting: A New Perspective](https://arxiv.org/abs/2102.13170)
 - [Revisiting Adversarial Robustness Distillation: Robust Soft Labels Make Student Better](https://arxiv.org/abs/2108.07969)
 - [How and When Adversarial Robustness Transfers in Knowledge Distillation?](https://arxiv.org/abs/2110.12072)
 - [On the benefits of knowledge distillation for adversarial robustness](https://arxiv.org/abs/2203.07159)
+- [Distilling Out-of-Distribution Robustness from Vision-Language Foundation Models](https://arxiv.org/abs/2311.01441)
 - [Distilling Adversarial Robustness Using Heterogeneous Teachers](https://arxiv.org/abs/2402.15586)
 
 Following papers are about **Certified Robustness**:
@@ -86,3 +93,4 @@ Following papers are about **Certified Robustness**:
 - [SoK: Certified Robustness for Deep Neural Networks](https://arxiv.org/abs/2009.04131)
 - [(Certified!!) Adversarial Robustness for Free!](https://arxiv.org/abs/2206.10550)
 - [Towards Certified Probabilistic Robustness with High Accuracy](https://arxiv.org/abs/2309.00879)
+- [Why does Knowledge Distillation Work? Rethink its Attention and Fidelity Mechanism](https://arxiv.org/abs/2405.00739)
