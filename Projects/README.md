@@ -34,7 +34,6 @@ Following papers are about miscellaneous topics such as **Robust Overfitting**, 
 - [Exploring Memorization in Adversarial Training](https://arxiv.org/abs/2106.01606)
 
 Following papers are about **Catastrophic Overfitting** (CO):
-
 - [Fast is Better Than Free: Revisiting Adversarial Training](https://arxiv.org/abs/2001.03994)
 - [Towards Understanding Fast Adversarial Training](https://arxiv.org/abs/2006.03089)
 - [Understanding and Improving Fast Adversarial Training](https://arxiv.org/abs/2007.02617)
@@ -59,11 +58,8 @@ Transferability of Distributional Robustness in Knowledge Distillation
 
 ## Readings
 Following papers are about **Distributional Robustness**:
-<!-- 
 - [Data-driven Distributionally Robust Optimization Using the Wasserstein Metric: Performance Guarantees and Tractable Reformulations](https://arxiv.org/abs/1505.05116) 
 - [Wasserstein Distributionally Robust Optimization: Theory and Applications in Machine Learning](https://arxiv.org/abs/1908.08729)
--->
-- [Certifying Some Distributional Robustness with Principled Adversarial Training](https://arxiv.org/abs/1710.10571)
 - [Generalised Lipschitz Regularisation Equals Distributional Robustness](https://arxiv.org/abs/2002.04197)
 - [Adversarial Distributional Training for Robust Deep Learning](https://arxiv.org/abs/2002.05999)
 - [The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization](https://arxiv.org/pdf/2006.16241)
@@ -78,8 +74,15 @@ Following papers are about **Distributional Robustness**:
 Following papers are about **Knowledge Distillation**:
 - [Variational Information Distillation for Knowledge Transfer](https://arxiv.org/abs/1904.05835)
 - [Adversarially Robust Distillation](https://arxiv.org/abs/1905.09747)
+- [Self-training with Noisy Student improves ImageNet classification](https://arxiv.org/abs/1911.04252)
 - [Revisiting Adversarial Robustness Distillation: Robust Soft Labels Make Student Better](https://arxiv.org/abs/2108.07969)
 - [How and When Adversarial Robustness Transfers in Knowledge Distillation?](https://arxiv.org/abs/2110.12072)
 - [On the benefits of knowledge distillation for adversarial robustness](https://arxiv.org/abs/2203.07159)
 - [Distilling Adversarial Robustness Using Heterogeneous Teachers](https://arxiv.org/abs/2402.15586)
 
+Following papers are about **Certified Robustness**:
+- [Certifying Some Distributional Robustness with Principled Adversarial Training](https://arxiv.org/abs/1710.10571)
+- [Certified Robustness to Adversarial Examples with Differential Privacy](https://arxiv.org/abs/1802.03471)
+- [SoK: Certified Robustness for Deep Neural Networks](https://arxiv.org/abs/2009.04131)
+- [(Certified!!) Adversarial Robustness for Free!](https://arxiv.org/abs/2206.10550)
+- [Towards Certified Probabilistic Robustness with High Accuracy](https://arxiv.org/abs/2309.00879)
