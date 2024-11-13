@@ -47,6 +47,7 @@ Following papers are about **Catastrophic Overfitting** (CO):
 - [Revisiting and Advancing Fast Adversarial Training Through The Lens of Bi-Level Optimization](https://arxiv.org/abs/2112.12376)
 - [Make Some Noise: Reliable and Efficient Single-Step Adversarial Training](https://arxiv.org/abs/2202.01181)
 - [Catastrophic Overfitting Can Be Induced with Discriminative Non-Robust Features](https://arxiv.org/abs/2206.08242)
+- [Benign, Tempered, or Catastrophic: A Taxonomy of Overfitting](https://arxiv.org/abs/2207.06569)
 - [Investigating Catastrophic Overfitting in Fast Adversarial Training: A Self-fitting Perspective](https://arxiv.org/abs/2302.11963)
 - [On the Over-Memorization During Natural, Robust and Catastrophic Overfitting](https://arxiv.org/abs/2310.08847)
 - [Blacksmith: Fast Adversarial Training of Vision Transformers via a Mixture of Single-step and Multi-step Methods](https://arxiv.org/abs/2310.18975)
