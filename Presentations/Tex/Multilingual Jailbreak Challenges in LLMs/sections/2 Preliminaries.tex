@@ -24,12 +24,24 @@
             \item \textbf{LRL}: low-resource if its data ratio is below 0.1\%
         \end{itemize}
     \end{itemize}
-    \begin{figure}
-            \centering
-            \includegraphics[width=\linewidth]{pic/language selection.png}
-            \caption{Language selection in preliminary experiments.}
-            \label{fig:language_selection}
-    \end{figure}
+    \begin{table}
+        \centering
+        \resizebox{\textwidth}{!}{  % Adjust the scale as needed
+        \begin{tabular}{c|p{10cm}}
+        \toprule
+        \textbf{Category} & \multicolumn{1}{c}{\textbf{Language \& Language Code}} \\
+        \midrule
+        \textbf{HRL} ($>$1\%) &  Russian (ru), German (de), Chinese (zh), Japanese (ja), French (fr), Spanish (es), Italian (it), Dutch (nl), Portuguese (pt), Vietnamese (vi) \\
+        \midrule
+        \textbf{MRL} ($>$0.1\%) &  Indonesian (id), Swedish (sv), Arabic (ar), Farsi (fa), Korean (ko), Greek (el), Thai (th), Ukrainian (uk), Bulgarian (bg), Hindi (hi) \\
+        \midrule
+        \textbf{LRL} ($<$ 0.1\%) & Bengali (bn), Tamil (ta), Urdu (ur), Malayalam (ml), Marathi (mr), Telugu (te), Gujarati (gu), Burmese (my), Javanese (jv), Swahili (sw)  \\
+        \bottomrule
+        \end{tabular}
+        }
+        \caption{Language selection in preliminary experiments.}
+        \label{tab:language_selection}
+    \end{table}
 \end{frame}
 
 \begin{frame}{Preliminary Results}
@@ -40,7 +52,7 @@
     \end{itemize}
     \begin{figure}
             \centering
-            \includegraphics[width=\linewidth]{pic/Prelim Results.png}
+            \includegraphics[width=\linewidth]{pic/preliminary_combine}
             \caption{Preliminary results on curated dataset. The line plot shows averaged results for three language categories, indicating an increasing unsafe rate as language availability decreases.}
             \label{fig:prelim_results}
         \end{figure}

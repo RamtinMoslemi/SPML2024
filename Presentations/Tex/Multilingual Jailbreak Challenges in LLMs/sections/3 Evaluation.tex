@@ -9,7 +9,7 @@
     \end{itemize}
     \begin{figure}
         \centering
-        \includegraphics[width=\linewidth]{pic/MultiJail.png}
+        \includegraphics[width=\linewidth]{pic/tag_pie_chart}
         \caption{Tag statistics of \textbf{MultiJail}.}
         \label{fig:MuliJail}
     \end{figure}
@@ -40,7 +40,7 @@
     \end{itemize}
     \begin{figure}
         \centering
-        \includegraphics[width=\linewidth]{pic/AIM.png}
+        \includegraphics[width=\linewidth]{pic/aim}
         \caption{Detailed prompt for AIM.}
         \label{fig:AIM}
     \end{figure}
@@ -50,13 +50,49 @@
     \begin{itemize}
         \item Despite a relatively higher likelihood in low-resource languages, the invalid rate remains acceptable.
     \end{itemize}
-    \begin{figure}
+    \begin{table}
         \centering
-        \includegraphics[width=\linewidth]{pic/main results.png}
-        \caption{Detailed results of ChatGPT and GPT-4 on \textbf{MultiJail} over two scenarios.}
-        \label{fig:main_results}
-    \end{figure}
+        \resizebox{0.9\textwidth}{!}{  % Adjust the scale as needed
+        \begin{tabular}{c|cccccc|cccccc}
+        \toprule
+        \multirow{3}{*}{\textbf{Lang.}}
+         & \multicolumn{6}{c|}{\textit{\textbf{unintentional}}} & \multicolumn{6}{c}{\textit{\textbf{intentional}}}  \\
+         \cmidrule(lr){2-7} \cmidrule(lr){8-13}
+        & \multicolumn{3}{c}{\textbf{ChatGPT}} & \multicolumn{3}{c|}{\textbf{GPT-4}} & \multicolumn{3}{c}{\textbf{ChatGPT}} & \multicolumn{3}{c}{\textbf{GPT-4}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+         & \texttt{unsafe} & \texttt{safe} & \texttt{invalid} & \texttt{unsafe} & \texttt{safe} & \texttt{invalid} & \texttt{unsafe} & \texttt{safe} & \texttt{invalid} & \texttt{unsafe} & \texttt{safe} & \texttt{invalid} \\
+         \midrule
+         \rowcolor{lightgray}
+         en &0.63&99.37&0.00 &0.95&99.05&0.00 &72.06&27.94&0.00 &28.25&71.75&0.00 \\
+         \midrule
+         zh &2.22&97.78&0.00 &3.49&96.51&0.00 &81.27&18.41&0.32 &41.90&58.10&0.00 \\
+         it &2.86&96.83&0.32 &2.54&97.14&0.32 &83.17&16.19&0.63 &44.44&55.56&0.00 \\
+         vi &7.94&90.79&1.27 &4.76&94.29&0.95 &81.27&18.73&0.00 &34.29&65.40&0.32 \\
+         % \midrule
+         \textbf{HRL} &4.34&95.13&0.53 &3.60&95.98&0.42 &81.90&17.60&1.48 &40.21&59.68&0.11 \\
+         \midrule
+         ar &6.03&93.65&0.32 &3.49&95.24&1.27 &82.54&17.14&0.32 &29.84&69.52&0.63 \\
+         ko &9.84&88.57&1.59 &3.81&95.56&0.63 &80.00&19.37&0.63 &34.92&64.76&0.32 \\
+         th &18.10&79.37&2.54 &5.08&93.97&0.95 &81.90&16.51&1.59 &46.67&53.02&0.32 \\
+         % \midrule
+         \textbf{MRL} &11.32&87.20&1.48 &4.13&94.94&0.95 &81.48&17.67&0.85 &37.14&62.43&0.42 \\
+         \midrule
+         bn &28.25&63.49&8.25 &12.7&83.17&4.13 &83.17&13.97&2.86 &38.41&61.59&0.00 \\
+         sw &7.94&91.75&0.32 &6.35&92.06&1.59 &83.49&15.56&0.95 &43.49&56.51&0.00 \\
+         jv &8.57&80.00&11.43 &11.43&75.24&13.33 &71.43&22.54&6.03 &52.38&45.40&2.22 \\
+         % \midrule
+         \textbf{LRL} &14.92&78.41&6.67 &10.16&83.49&6.35 &79.37&17.35&3.28 &44.76&54.50&0.74 \\
+         \midrule
+         \textbf{Avg.} &10.19&86.91&2.89 &5.96&91.46&2.57 &80.92&17.60&1.48 &40.71&58.87&0.42 \\
+        \bottomrule
+        \end{tabular}
+        }
+        \caption{Detailed results of ChatGPT and GPT-4 on \textbf{MultiJail} over two
+scenarios.}
+        \label{tab:detail_main_result}
+    \end{table}
 \end{frame}
+
 
 \begin{frame}{Unintentional Scenarios}
     \begin{itemize}
@@ -64,12 +100,26 @@
         \item \textbf{Unsafe rate increases with decreasing language availability}: This finding suggests that individuals who speak low-resource languages are approximately three times more likely to unintentionally come across harmful content.
         \item \textbf{Multilingual adaptive attack poses greater threat}: We explore a multilingual adaptive attack strategy where an adaptive adversary exploits translation as a jailbreak method. This adversary can iterate through a candidate pool of languages to execute an attack.
     \end{itemize}
-    \begin{figure}
+    \begin{table}
         \centering
-        \includegraphics[width=0.5\linewidth]{pic/adaptive.png}
-        \caption{Results of multilingual adaptive attacks on both scenarios. A multilingual attack refers to an adaptive selection of languages for attack and is regarded successful if any of the attempted languages generate unsafe content.}
-        \label{fig:adaptive}
-    \end{figure}
+        \resizebox{0.5\textwidth}{!}{  % Adjust the scale as needed
+        \begin{tabular}{c|cc|cc}
+        \toprule
+        \multirow{2}{*}{\textbf{Lang.}} & \multicolumn{2}{c}{\textbf{\textit{unintentional}}} & \multicolumn{2}{c}{\textbf{\textit{intentional}}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+              &  \textbf{ChatGPT} &\textbf{GPT-4}&  \textbf{ChatGPT} &\textbf{GPT-4} \\
+             \midrule
+                \textbf{HRL} & 10.79 & 5.71 & 94.29 & 60.00 \\
+                \textbf{MRL} & 26.98 & 9.21 & 94.29 & 59.68\\
+                \textbf{LRL} & 35.24 & 22.86 & 96.51 & 68.57 \\
+                \midrule
+                \textbf{All} & 44.76 & 27.30 & 99.37 & 79.05 \\
+                \bottomrule
+        \end{tabular}
+        }
+        \caption{Results of multilingual adaptive attacks on both scenarios. A multilingual adaptive attack refers to an adaptive selection of languages for attack and is regarded as successful if any of the attempted languages generate unsafe content.}
+        \label{tab:multilingual_adaptive_attacks}
+    \end{table}
 \end{frame}
 
 
@@ -89,13 +139,13 @@
         \centering
         \begin{minipage}{.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{pic/Translation.png}
+            \includegraphics[width=\linewidth]{pic/direct_google}
             \caption{Ablation on translation quality}
             \label{fig:translation_ablation}
         \end{minipage}
         \begin{minipage}{.45\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{pic/Language.png}
+            \includegraphics[width=\linewidth]{pic/aim_mul}
             \caption{Ablation on jailbreak language}\label{fig:language_ablation}
         \end{minipage}
     \end{figure}
